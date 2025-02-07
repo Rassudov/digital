@@ -1,0 +1,101 @@
+/* Основные стили для сайта */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Тело страницы */
+body {
+    font-family: 'Lora', serif;
+    background-color: #1A1A1A; /* Темный фон */
+    color: #333; /* Серый текст */
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Заголовок страницы */
+header h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 3em;
+    text-align: center;
+    color: #2A0944; /* Темно-фиолетовый цвет */
+    margin-bottom: 20px;
+}
+
+/* Основной контент */
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Подзаголовок Scorbitore с градиентом */
+.scorbitore {
+    font-family: 'Cinzel', serif;
+    background: linear-gradient(to right, #00FF00, #006400); /* Зеленый градиент */
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+/* Подзаголовок Cep cavities с курсивом и бордовым цветом */
+.cep-cavities {
+    font-family: 'Lora', serif;
+    font-style: italic;
+    color: #800020; /* Бордовый цвет */
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+/* Стили для списка Capacitatea */
+.capacitatea-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+.capacitatea-list li {
+    background-color: #F5E6CA; /* Фон карточек */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.capacitatea-list li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.capacitatea-list li strong {
+    font-weight: bold;
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    .scorbitore {
+        font-size: 2em;
+    }
+
+    .cep-cavities {
+        font-size: 1.5em;
+    }
+
+    .content {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .capacitatea-list li {
+        padding: 15px;
+    }
+}
