@@ -12,6 +12,12 @@ body {
     color: #333; /* Серый текст */
     line-height: 1.6;
     padding: 20px;
+    
+    /* Добавляем резиновый фон */
+    background-image: url('/img.back.jpg'); /* Замените на свой URL изображения */
+    background-size: cover; /* Фон будет покрывать всю страницу */
+    background-position: center; /* Центрируем изображение */
+    background-attachment: fixed; /* Фон будет фиксированным при прокрутке */
 }
 
 /* Заголовок страницы */
@@ -28,6 +34,8 @@ header h1 {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6); /* Добавляем полупрозрачный черный фон для контента */
+    border-radius: 8px; /* Сглаживаем углы */
 }
 
 /* Подзаголовок Scorbitore с градиентом */
