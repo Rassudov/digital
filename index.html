@@ -3,36 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Witch's Cave</title>
+    <title>Главная страница</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Меню -->
-    <nav class="menu">
-        <img src="logo.png" alt="Company Logo" class="logo">
-        <ul>
-            <li><a href="#">Услуги</a></li>
-            <li><a href="#">О нас</a></li>
-            <li><a href="#">Блог</a></li>
-            <li><a href="#">Контакты</a></li>
-        </ul>
-    </nav>
-
-    <!-- Контент -->
     <header>
-        <h1>The Witch's Cave</h1>
+        <div class="menu">
+            <div class="logo">Логотип</div>
+        </div>
     </header>
-    <div class="content">
-        <h2 class="scorbitore">Scorbitore</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
 
-        <h3 class="cep-cavities">Cep cavities</h3>
-        <ul class="capacitatea-list">
-            <li><strong>Copacitatea</strong> – Lorem ipsum dolor sit amet.</li>
-            <li><strong>Magica</strong> – Consectetur adipiscing elit.</li>
-            <li><strong>Fortuna</strong> – Sed do eiusmod tempor incididunt.</li>
-        </ul>
-    </div>
+    <main>
+        <section class="hero">
+            <h1>Ваше агентство</h1>
+            <p>Мы предлагаем консультацию за 20 USDT за 40 минут. Гарантия возврата денег, если не будет пользы.</p>
+            <button>Заказать консультацию</button>
+        </section>
+
+        <section class="gallery">
+            <div class="gallery-preview">
+                <div class="project-large">
+                    <img src="large-placeholder.jpg" alt="Крупный проект">
+                </div>
+            </div>
+            <div class="gallery-thumbnails">
+                <div class="project-thumbnail"><img src="thumb1.jpg" alt="Проект 1"></div>
+                <div class="project-thumbnail"><img src="thumb2.jpg" alt="Проект 2"></div>
+                <div class="project-thumbnail"><img src="thumb3.jpg" alt="Проект 3"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Ваше агентство. Все права защищены.</p>
+    </footer>
 </body>
 </html>
