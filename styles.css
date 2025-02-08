@@ -1,63 +1,104 @@
-/* Основные стили для сайта */
+/* Основные стили */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Тело страницы */
+/* Фон страницы */
 body {
     font-family: 'Lora', serif;
-    background-color: #1A1A1A; /* Темный фон */
-    color: #333; /* Серый текст */
+    background-color: #1A1A1A;
+    color: #333;
     line-height: 1.6;
     padding: 20px;
-    
-    /* Добавляем резиновый фон */
-    background-image: url('img/back.jpg'); /* Замените на свой URL изображения */
-    background-size: cover; /* Фон будет покрывать всю страницу */
-    background-position: center; /* Центрируем изображение */
-    background-attachment: fixed; /* Фон будет фиксированным при прокрутке */
+
+    /* Резиновый фон */
+    background-image: url('img/back.jpg'); /* Подставьте свою картинку */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
-/* Заголовок страницы */
+/* Фиксированное меню */
+.menu {
+    position: fixed;
+    top: 20px;
+    left: 30px;
+    background-color: rgba(0, 0, 0, 0.7); /* Черный полупрозрачный фон */
+    border-radius: 10px;
+    padding: 15px 25px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Логотип */
+.logo {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+/* Стили для списка меню */
+.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.menu ul li {
+    display: inline;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-family: 'Cinzel', serif;
+    transition: color 0.3s ease;
+}
+
+.menu ul li a:hover {
+    color: #FFD700; /* Золотистый цвет при наведении */
+}
+
+/* Заголовок */
 header h1 {
     font-family: 'Cinzel', serif;
     font-size: 3em;
     text-align: center;
-    color: #2A0944; /* Темно-фиолетовый цвет */
+    color: #2A0944;
     margin-bottom: 20px;
 }
 
-/* Основной контент */
+/* Контент */
 .content {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.6); /* Добавляем полупрозрачный черный фон для контента */
-    border-radius: 8px; /* Сглаживаем углы */
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
 }
 
-/* Подзаголовок Scorbitore с градиентом */
+/* Scorbitore */
 .scorbitore {
     font-family: 'Cinzel', serif;
-    background: linear-gradient(to right, #00FF00, #006400); /* Зеленый градиент */
+    background: linear-gradient(to right, #00FF00, #006400);
     -webkit-background-clip: text;
     color: transparent;
     font-size: 2.5em;
-    margin-bottom: 15px;
 }
 
-/* Подзаголовок Cep cavities с курсивом и бордовым цветом */
+/* Cep cavities */
 .cep-cavities {
     font-family: 'Lora', serif;
     font-style: italic;
-    color: #800020; /* Бордовый цвет */
+    color: #800020;
     font-size: 2em;
-    margin-bottom: 10px;
 }
 
-/* Стили для списка Capacitatea */
+/* Список Capacitatea */
 .capacitatea-list {
     display: flex;
     flex-direction: column;
@@ -67,7 +108,7 @@ header h1 {
 }
 
 .capacitatea-list li {
-    background-color: #F5E6CA; /* Фон карточек */
+    background-color: #F5E6CA;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -79,11 +120,7 @@ header h1 {
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
-.capacitatea-list li strong {
-    font-weight: bold;
-}
-
-/* Адаптивность для мобильных устройств */
+/* Адаптивность */
 @media (max-width: 768px) {
     header h1 {
         font-size: 2em;
@@ -100,10 +137,19 @@ header h1 {
     .content {
         padding: 10px;
     }
-}
 
-@media (max-width: 480px) {
-    .capacitatea-list li {
-        padding: 15px;
+    .menu {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 20px;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .menu ul li a {
+        font-size: 14px;
     }
 }
