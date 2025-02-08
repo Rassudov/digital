@@ -14,7 +14,7 @@ body {
     padding: 20px;
     
     /* Добавляем резиновый фон */
-    background-image: url('/img/back.jpg'); /* Замените на свой URL изображения */
+    background-image: url('img/back.jpg'); /* Замените на свой URL изображения */
     background-size: cover; /* Фон будет покрывать всю страницу */
     background-position: center; /* Центрируем изображение */
     background-attachment: fixed; /* Фон будет фиксированным при прокрутке */
